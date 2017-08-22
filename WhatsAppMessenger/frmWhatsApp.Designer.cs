@@ -71,12 +71,14 @@
 			this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
 			this.signOutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.signOutToolStripMenuItem.Text = "Sign Out";
+			this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
 			this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
+			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
 			// 
 			// helpToolStripMenuItem
 			// 
@@ -91,6 +93,7 @@
 			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
 			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.aboutToolStripMenuItem.Text = "About";
+			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
 			// 
 			// panel1
 			// 
@@ -121,23 +124,24 @@
 			this.linkNewAccount.Location = new System.Drawing.Point(61, 427);
 			this.linkNewAccount.Name = "linkNewAccount";
 			this.linkNewAccount.Size = new System.Drawing.Size(98, 13);
-			this.linkNewAccount.TabIndex = 1;
+			this.linkNewAccount.TabIndex = 4;
 			this.linkNewAccount.TabStop = true;
 			this.linkNewAccount.Text = "Get a new account";
+			this.linkNewAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNewAccount_LinkClicked);
 			// 
 			// txtPhoneNumber
 			// 
 			this.txtPhoneNumber.Location = new System.Drawing.Point(28, 140);
 			this.txtPhoneNumber.Name = "txtPhoneNumber";
 			this.txtPhoneNumber.Size = new System.Drawing.Size(167, 20);
-			this.txtPhoneNumber.TabIndex = 2;
+			this.txtPhoneNumber.TabIndex = 0;
 			// 
 			// txtPassword
 			// 
 			this.txtPassword.Location = new System.Drawing.Point(28, 189);
 			this.txtPassword.Name = "txtPassword";
 			this.txtPassword.Size = new System.Drawing.Size(167, 20);
-			this.txtPassword.TabIndex = 4;
+			this.txtPassword.TabIndex = 1;
 			// 
 			// label2
 			// 
@@ -145,7 +149,7 @@
 			this.label2.Location = new System.Drawing.Point(25, 173);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(56, 13);
-			this.label2.TabIndex = 3;
+			this.label2.TabIndex = 0;
 			this.label2.Text = "Password:";
 			// 
 			// chkRemember
@@ -154,18 +158,20 @@
 			this.chkRemember.Location = new System.Drawing.Point(28, 215);
 			this.chkRemember.Name = "chkRemember";
 			this.chkRemember.Size = new System.Drawing.Size(167, 17);
-			this.chkRemember.TabIndex = 5;
+			this.chkRemember.TabIndex = 2;
 			this.chkRemember.Text = "Remember phone && password";
 			this.chkRemember.UseVisualStyleBackColor = true;
+			this.chkRemember.CheckedChanged += new System.EventHandler(this.chkRemember_CheckedChanged);
 			// 
 			// btnSignIn
 			// 
 			this.btnSignIn.Location = new System.Drawing.Point(73, 279);
 			this.btnSignIn.Name = "btnSignIn";
 			this.btnSignIn.Size = new System.Drawing.Size(75, 23);
-			this.btnSignIn.TabIndex = 6;
+			this.btnSignIn.TabIndex = 3;
 			this.btnSignIn.Text = "Sign In";
 			this.btnSignIn.UseVisualStyleBackColor = true;
+			this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
 			// 
 			// frmWhatsApp
 			// 
@@ -174,9 +180,13 @@
 			this.ClientSize = new System.Drawing.Size(247, 494);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.menuStrip1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MainMenuStrip = this.menuStrip1;
+			this.MaximizeBox = false;
 			this.Name = "frmWhatsApp";
-			this.Text = "Form1";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "WhatsApp Messenger";
+			this.Load += new System.EventHandler(this.frmWhatsApp_Load);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.panel1.ResumeLayout(false);

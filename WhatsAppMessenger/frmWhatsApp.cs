@@ -16,5 +16,45 @@ namespace WhatsAppMessenger
 		{
 			InitializeComponent();
 		}
+
+		private void btnSignIn_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void chkRemember_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void linkNewAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+
+		}
+
+		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void frmWhatsApp_Load(object sender, EventArgs e)
+		{
+			if(Properties.Settings.Default.Remember)
+			{
+				txtPhoneNumber.Text = Properties.Settings.Default.PhoneNumber;
+				txtPassword.Text = Properties.Settings.Default.Password;
+				chkRemember.Checked = Properties.Settings.Default.Remember;
+			}
+		}
 	}
 }
