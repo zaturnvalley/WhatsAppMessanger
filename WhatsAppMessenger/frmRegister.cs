@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WhatsAppMessenger
 {
-	public partial class frmRegister : Form
+	public partial class Registration : Form
 	{
-		public frmRegister()
+		public Registration()
 		{
 			InitializeComponent();
 		}
