@@ -36,10 +36,12 @@
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.linkNewAccount = new System.Windows.Forms.LinkLabel();
+			this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+			this.txtPassword = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
+			this.chkRemember = new System.Windows.Forms.CheckBox();
+			this.btnSignIn = new System.Windows.Forms.Button();
 			this.menuStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
@@ -92,10 +94,12 @@
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.textBox2);
+			this.panel1.Controls.Add(this.btnSignIn);
+			this.panel1.Controls.Add(this.chkRemember);
+			this.panel1.Controls.Add(this.txtPassword);
 			this.panel1.Controls.Add(this.label2);
-			this.panel1.Controls.Add(this.textBox1);
-			this.panel1.Controls.Add(this.linkLabel1);
+			this.panel1.Controls.Add(this.txtPhoneNumber);
+			this.panel1.Controls.Add(this.linkNewAccount);
 			this.panel1.Controls.Add(this.label1);
 			this.panel1.Location = new System.Drawing.Point(12, 27);
 			this.panel1.Name = "panel1";
@@ -105,44 +109,63 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(32, 124);
+			this.label1.Location = new System.Drawing.Point(25, 124);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(79, 13);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Phone number:";
 			// 
-			// linkLabel1
+			// linkNewAccount
 			// 
-			this.linkLabel1.AutoSize = true;
-			this.linkLabel1.Location = new System.Drawing.Point(81, 422);
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(98, 13);
-			this.linkLabel1.TabIndex = 1;
-			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Text = "Get a new account";
+			this.linkNewAccount.AutoSize = true;
+			this.linkNewAccount.Location = new System.Drawing.Point(61, 427);
+			this.linkNewAccount.Name = "linkNewAccount";
+			this.linkNewAccount.Size = new System.Drawing.Size(98, 13);
+			this.linkNewAccount.TabIndex = 1;
+			this.linkNewAccount.TabStop = true;
+			this.linkNewAccount.Text = "Get a new account";
 			// 
-			// textBox1
+			// txtPhoneNumber
 			// 
-			this.textBox1.Location = new System.Drawing.Point(35, 140);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 2;
+			this.txtPhoneNumber.Location = new System.Drawing.Point(28, 140);
+			this.txtPhoneNumber.Name = "txtPhoneNumber";
+			this.txtPhoneNumber.Size = new System.Drawing.Size(167, 20);
+			this.txtPhoneNumber.TabIndex = 2;
 			// 
-			// textBox2
+			// txtPassword
 			// 
-			this.textBox2.Location = new System.Drawing.Point(35, 189);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 20);
-			this.textBox2.TabIndex = 4;
+			this.txtPassword.Location = new System.Drawing.Point(28, 189);
+			this.txtPassword.Name = "txtPassword";
+			this.txtPassword.Size = new System.Drawing.Size(167, 20);
+			this.txtPassword.TabIndex = 4;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(32, 173);
+			this.label2.Location = new System.Drawing.Point(25, 173);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(56, 13);
 			this.label2.TabIndex = 3;
 			this.label2.Text = "Password:";
+			// 
+			// chkRemember
+			// 
+			this.chkRemember.AutoSize = true;
+			this.chkRemember.Location = new System.Drawing.Point(28, 215);
+			this.chkRemember.Name = "chkRemember";
+			this.chkRemember.Size = new System.Drawing.Size(167, 17);
+			this.chkRemember.TabIndex = 5;
+			this.chkRemember.Text = "Remember phone && password";
+			this.chkRemember.UseVisualStyleBackColor = true;
+			// 
+			// btnSignIn
+			// 
+			this.btnSignIn.Location = new System.Drawing.Point(73, 279);
+			this.btnSignIn.Name = "btnSignIn";
+			this.btnSignIn.Size = new System.Drawing.Size(75, 23);
+			this.btnSignIn.TabIndex = 6;
+			this.btnSignIn.Text = "Sign In";
+			this.btnSignIn.UseVisualStyleBackColor = true;
 			// 
 			// frmWhatsApp
 			// 
@@ -172,11 +195,13 @@
 		private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox txtPassword;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.LinkLabel linkLabel1;
+		private System.Windows.Forms.TextBox txtPhoneNumber;
+		private System.Windows.Forms.LinkLabel linkNewAccount;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button btnSignIn;
+		private System.Windows.Forms.CheckBox chkRemember;
 	}
 }
 
