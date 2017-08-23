@@ -34,7 +34,14 @@ namespace WhatsAppMessenger
 
 		private void linkNewAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-
+			using (frmRegister frm = new frmRegister())
+			{
+				if(frm.ShowDialog()==DialogResult.OK)
+				{
+					txtPhoneNumber.Text = Properties.Settings.Default.PhoneNumber;
+					txtPassword.Text = Properties.Settings.Default.Password;
+				}
+			}
 		}
 
 		private void frmWhatsApp_Load(object sender, EventArgs e)
