@@ -46,6 +46,12 @@ namespace WhatsAppMessenger
 
 		private void Save()
 		{
+			this.grbRequestCode.Enabled = false;
+			this.grbConfirmCode.Enabled = false;
+			Properties.Settings.Default.PhoneNumber = txtPhoneNumber.Text;
+			Properties.Settings.Default.Password = password;
+			Properties.Settings.Default.FullName = txtFullName.Text;
+			Properties.Settings.Default.Save();
 
 		}
 		private void btnConfirm_Click(object sender, EventArgs e)
