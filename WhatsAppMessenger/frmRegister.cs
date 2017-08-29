@@ -38,7 +38,7 @@ namespace WhatsAppMessenger
 				txtFullName.Focus();
 				return;
 			}
-			if(WhatsAppApi.Register.WhatsRegisterV2.RequestCode(txtPhoneNumber.Text,out password, "sms"))
+			if (WhatsAppApi.Register.WhatsRegisterV2.RequestCode(txtPhoneNumber.Text, out password, "sms"))
 			{
 				if (!string.IsNullOrEmpty(password))
 					Save();
@@ -48,6 +48,8 @@ namespace WhatsAppMessenger
 					grbConfirmCode.Enabled = true;
 				}
 			}
+			else
+				MessageBox.Show("Could not generate password.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
 		private void Save()
